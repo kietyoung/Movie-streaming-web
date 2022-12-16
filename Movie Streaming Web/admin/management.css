@@ -4,6 +4,7 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 .grid-sections {
   /* overflow: hidden; */
+  position: relative;
   grid-template-columns: 15% 85%;
   gap: 0;
 }
@@ -33,10 +34,11 @@
 .nav-list a,
 .nav-list a:visited,
 .nav-list a:link {
-  padding: 2rem 0;
   display: block;
+  width: 100%;
   color: #fff;
   text-align: center;
+  padding: 2rem 0;
 }
 
 .nav-list a:hover,
@@ -144,10 +146,6 @@
     #da77f2
   );
 }
-/* - Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 
 .overview-icon {
   font-size: 3.6rem;
@@ -194,9 +192,9 @@
 .add-form-popup {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   border: 0.3rem solid #f1f1f1;
 }
 
