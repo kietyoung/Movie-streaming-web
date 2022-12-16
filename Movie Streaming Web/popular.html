@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/movie_page.css" />
+    <link rel="stylesheet" href="css/media.css" />
 
     <title>Document</title>
   </head>
@@ -27,7 +28,7 @@
           <ion-icon class="nav-logo" name="home"></ion-icon>
           <span>Home</span>
         </a>
-        <a href="#" class="main-nav-el">
+        <a href="popular.html" class="main-nav-el">
           <ion-icon class="nav-logo" name="flame"></ion-icon>
           <span>Popular</span>
         </a>
@@ -35,28 +36,34 @@
           <ion-icon class="nav-logo" name="star"></ion-icon>
           <span>My List</span>
         </a>
-        <div class="search-bar">
+        <div class="search-bar main-nav-el">
           <input type="text" class="search-bar-input" placeholder="Search" />
           <button class="search-bar-submit">
             <ion-icon class="nav-logo" name="search"></ion-icon>
           </button>
         </div>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon
+          class="main-nav-el icon-open-menu"
+          name="menu-outline"
+        ></ion-icon>
+        <ion-icon
+          class="main-nav-el icon-close-menu"
+          name="close-outline"
+        ></ion-icon>
+      </button>
 
-      <a href="#" class="main-nav-el"
+      <a href="profile.html" class="main-nav-el nav-avatar"
         ><ion-icon class="avatar" name="person-circle-outline"></ion-icon
       ></a>
     </header>
 
     <body>
       <main>
-        <section class="padding-top-header movies-section">
+        <section class="margin-top-header margin-btm-section movies-section">
           <div class="container tags" id="tags">
             <div class="tag highlight">Actions</div>
-            <div class="tag">Actions</div>
-            <div class="tag">Actions</div>
-            <div class="tag">Actions</div>
-            <div class="tag">Actions</div>
             <div class="tag">Actions</div>
             <div class="tag">Actions</div>
             <div class="tag">Actions</div>
@@ -75,24 +82,20 @@
           </div>
           <div id="main" class="movie-container grid grid-search-content">
             <div class="movie-card">
-              <div class="card-front">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
-              </div>
-              <div class="card-back">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
+              <div class="card-container">
+                <div class="card-img-box">
+                  <img
+                    class="thumbnail"
+                    src="images/gallery-img-1.jpg"
+                    alt="movie thumbnail"
+                  />
+                </div>
+
                 <div class="card-content">
                   <h5 class="movie-title">Irish Man</h5>
                   <p class="movie-length">1h 0m</p>
                   <div class="movie-buttons">
-                    <a href="#"
+                    <a href="movie_detailed.html"
                       ><ion-icon name="play-circle-outline"></ion-icon
                     ></a>
                     <ion-icon name="add-circle-outline"></ion-icon>
@@ -102,24 +105,20 @@
             </div>
 
             <div class="movie-card">
-              <div class="card-front">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
-              </div>
-              <div class="card-back">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
+              <div class="card-container">
+                <div class="card-img-box">
+                  <img
+                    class="thumbnail"
+                    src="images/gallery-img-1.jpg"
+                    alt="movie thumbnail"
+                  />
+                </div>
+
                 <div class="card-content">
                   <h5 class="movie-title">Irish Man</h5>
                   <p class="movie-length">1h 0m</p>
                   <div class="movie-buttons">
-                    <a href="#"
+                    <a href="movie_detailed.html"
                       ><ion-icon name="play-circle-outline"></ion-icon
                     ></a>
                     <ion-icon name="add-circle-outline"></ion-icon>
@@ -129,24 +128,20 @@
             </div>
 
             <div class="movie-card">
-              <div class="card-front">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
-              </div>
-              <div class="card-back">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
+              <div class="card-container">
+                <div class="card-img-box">
+                  <img
+                    class="thumbnail"
+                    src="images/gallery-img-1.jpg"
+                    alt="movie thumbnail"
+                  />
+                </div>
+
                 <div class="card-content">
                   <h5 class="movie-title">Irish Man</h5>
                   <p class="movie-length">1h 0m</p>
                   <div class="movie-buttons">
-                    <a href="#"
+                    <a href="movie_detailed.html"
                       ><ion-icon name="play-circle-outline"></ion-icon
                     ></a>
                     <ion-icon name="add-circle-outline"></ion-icon>
@@ -156,24 +151,20 @@
             </div>
 
             <div class="movie-card">
-              <div class="card-front">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
-              </div>
-              <div class="card-back">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
+              <div class="card-container">
+                <div class="card-img-box">
+                  <img
+                    class="thumbnail"
+                    src="images/gallery-img-1.jpg"
+                    alt="movie thumbnail"
+                  />
+                </div>
+
                 <div class="card-content">
                   <h5 class="movie-title">Irish Man</h5>
                   <p class="movie-length">1h 0m</p>
                   <div class="movie-buttons">
-                    <a href="#"
+                    <a href="movie_detailed.html"
                       ><ion-icon name="play-circle-outline"></ion-icon
                     ></a>
                     <ion-icon name="add-circle-outline"></ion-icon>
@@ -183,24 +174,20 @@
             </div>
 
             <div class="movie-card">
-              <div class="card-front">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
-              </div>
-              <div class="card-back">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
+              <div class="card-container">
+                <div class="card-img-box">
+                  <img
+                    class="thumbnail"
+                    src="images/gallery-img-1.jpg"
+                    alt="movie thumbnail"
+                  />
+                </div>
+
                 <div class="card-content">
                   <h5 class="movie-title">Irish Man</h5>
                   <p class="movie-length">1h 0m</p>
                   <div class="movie-buttons">
-                    <a href="#"
+                    <a href="movie_detailed.html"
                       ><ion-icon name="play-circle-outline"></ion-icon
                     ></a>
                     <ion-icon name="add-circle-outline"></ion-icon>
@@ -210,24 +197,20 @@
             </div>
 
             <div class="movie-card">
-              <div class="card-front">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
-              </div>
-              <div class="card-back">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
+              <div class="card-container">
+                <div class="card-img-box">
+                  <img
+                    class="thumbnail"
+                    src="images/gallery-img-1.jpg"
+                    alt="movie thumbnail"
+                  />
+                </div>
+
                 <div class="card-content">
                   <h5 class="movie-title">Irish Man</h5>
                   <p class="movie-length">1h 0m</p>
                   <div class="movie-buttons">
-                    <a href="#"
+                    <a href="movie_detailed.html"
                       ><ion-icon name="play-circle-outline"></ion-icon
                     ></a>
                     <ion-icon name="add-circle-outline"></ion-icon>
@@ -237,24 +220,20 @@
             </div>
 
             <div class="movie-card">
-              <div class="card-front">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
-              </div>
-              <div class="card-back">
-                <img
-                  class="thumbnail"
-                  src="images/gallery-img-1.jpg"
-                  alt="movie thumbnail"
-                />
+              <div class="card-container">
+                <div class="card-img-box">
+                  <img
+                    class="thumbnail"
+                    src="images/gallery-img-1.jpg"
+                    alt="movie thumbnail"
+                  />
+                </div>
+
                 <div class="card-content">
                   <h5 class="movie-title">Irish Man</h5>
                   <p class="movie-length">1h 0m</p>
                   <div class="movie-buttons">
-                    <a href="#"
+                    <a href="movie_detailed.html"
                       ><ion-icon name="play-circle-outline"></ion-icon
                     ></a>
                     <ion-icon name="add-circle-outline"></ion-icon>
@@ -327,6 +306,8 @@
         </div>
       </footer>
     </body>
+
+    <script src="js/effects/navbar.js"></script>
 
     <script
       type="module"
