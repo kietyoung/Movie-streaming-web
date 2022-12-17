@@ -16,38 +16,52 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header class="main-header">
       <nav class="main-nav">
         <ion-icon class="logo" name="film-outline"></ion-icon>
-        <a href="#" class="main-nav-el">
+        <a href="main_page.html" class="main-nav-el">
           <ion-icon class="nav-logo" name="home"></ion-icon>
           <span>Home</span>
         </a>
-        <a href="#" class="main-nav-el">
+        <a href="popular.html" class="main-nav-el">
           <ion-icon class="nav-logo" name="flame"></ion-icon>
           <span>Popular</span>
         </a>
-        <a href="#" class="main-nav-el">
+        <a href="search.html" class="main-nav-el">
           <ion-icon class="nav-logo" name="star"></ion-icon>
           <span>My List</span>
         </a>
-        <div class="search-bar">
+        <div class="search-bar main-nav-el">
           <input type="text" class="search-bar-input" placeholder="Search" />
           <button class="search-bar-submit">
             <ion-icon class="nav-logo" name="search"></ion-icon>
           </button>
         </div>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon
+          class="main-nav-el icon-open-menu"
+          name="menu-outline"
+        ></ion-icon>
+        <ion-icon
+          class="main-nav-el icon-close-menu"
+          name="close-outline"
+        ></ion-icon>
+      </button>
 
-      <a href="#" class="main-nav-el"
-        ><ion-icon class="avatar" name="person-circle-outline"></ion-icon
-      ></a>
+      <div class="center-vertical nav-user-block">
+        <a href="profile.html" class="main-nav-el nav-avatar"
+          ><ion-icon class="avatar" name="person-circle-outline"></ion-icon
+        ></a>
+        <a href="landing.html" class="main-nav-el nav-logout">Logout</a>
+      </div>
     </header>
 
     <main>
-      <section class="profile-section">
+      <section class="margin-btm-section profile-section">
         <div class="grid profile-container">
           <div class="user">
             <img class="img-avatar" src="images/avatar.jpg" alt="avatar" />
@@ -140,6 +154,12 @@
         </nav>
       </div>
     </footer>
+    <script src="js/effects/navbar.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
