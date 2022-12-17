@@ -78,10 +78,14 @@
 }
 
 .pricing-plan-primary {
+  justify-self: start;
+
   border: 2px solid rgb(255, 255, 255);
 }
 
 .pricing-plan-secondary {
+  justify-self: end;
+
   border: 2px solid #999;
 }
 

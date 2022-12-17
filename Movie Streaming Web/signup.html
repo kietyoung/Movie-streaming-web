@@ -14,18 +14,19 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/media.css" />
 
     <title>Document</title>
   </head>
   <body>
     <header>
       <ion-icon class="logo" name="film-outline"></ion-icon>
-      <a href="landing.html" class="btn btn-primary hero-heading-btn">Log in</a>
+      <a href="login.html" class="btn btn-primary hero-heading-btn">Log in</a>
     </header>
     <section class="form-page">
       <form class="signup-form">
-        <div class="form-box signup-step signup-step-1 active">
+        <div class="form-box signup-step active" data-step="1">
           <div class="center-text form-header">
             <span class="step-number">1</span>
             <p class="form-heading">Account information</p>
@@ -52,14 +53,13 @@
           </div>
 
           <div class="form-btn-group">
-            <button class="btn btn-primary btn-prev">
-              &LeftArrow; Previous
+            <button type="button" class="btn btn-primary btn-next" data-next>
+              Next &RightArrow;
             </button>
-            <button class="btn btn-primary btn-next">Next &RightArrow;</button>
           </div>
         </div>
 
-        <div class="form-box signup-step signup-step-2">
+        <div class="form-box signup-step" data-step="2">
           <div class="center-text form-header">
             <span class="step-number">2</span>
             <p class="form-heading">Choose your plan</p>
@@ -94,7 +94,7 @@
                   type="radio"
                   name="pricing-radio"
                   class="pricing-radio"
-                  id="pricing-radio-normal"
+                  id="pricing-normal"
                   value="normal"
                 />
               </div>
@@ -128,60 +128,72 @@
                   type="radio"
                   class="pricing-radio"
                   name="pricing-radio"
-                  id="pricing-radio-premium"
+                  id="pricing-premium"
                   value="premium"
                 />
               </div>
             </div>
           </div>
           <div class="form-btn-group">
-            <button class="btn btn-primary btn-prev">
+            <button type="button" class="btn btn-primary btn-prev" data-prev>
               &LeftArrow; Previous
             </button>
-            <button class="btn btn-primary btn-next">Next &RightArrow;</button>
+            <button type="button" class="btn btn-primary btn-next" data-next>
+              Next &RightArrow;
+            </button>
           </div>
+        </div>
+
+        <div class="form-box signup-step" data-step="3">
+          <div class="center-text form-header">
+            <span class="step-number">3</span>
+            <p class="form-heading">Payment methods</p>
+          </div>
+
+          <p class="description">Select your payment method</p>
+          <div class="form-radio-groups flex-column">
+            <div class="form-group center-vertical">
+              <input type="radio" name="payment" id="credit" value="credit" />
+              <label for="payment"
+                ><ion-icon name="card-outline" class="radio-icon"></ion-icon
+                ><span>Credit card / Debit card</span></label
+              >
+            </div>
+
+            <div class="form-group center-vertical">
+              <input type="radio" name="payment" id="cash" value="cash" />
+              <label for="payment"
+                ><ion-icon name="cash-outline"></ion-icon
+                ><span>Cash / Delivery</span></label
+              >
+            </div>
+
+            <div class="form-group center-vertical">
+              <input type="radio" name="payment" id="wallet" value="wallet" />
+              <label for="payment" class="center-vertical"
+                ><ion-icon name="wallet-outline"></ion-icon
+                ><span>E-Wallets</span></label
+              >
+            </div>
+
+            <div class="form-btn-group">
+              <button type="button" class="btn btn-primary btn-prev" data-prev>
+                &LeftArrow; Previous
+              </button>
+              <button type="submit" class="btn btn-primary btn-next">
+                Signup
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-box signup-complete">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+          <p>Account created successfully</p>
         </div>
       </form>
     </section>
 
-    <div class="form-box signup-step signup-step-3">
-      <div class="center-text form-header">
-        <span class="step-number">3</span>
-        <p class="form-heading">Payment methods</p>
-      </div>
-
-      <p class="description">Select your payment method</p>
-      <div class="form-radio-groups flex-column">
-        <div class="form-group center-vertical">
-          <input type="radio" name="payment" id="payment" value="credit" />
-          <label for="payment"
-            ><ion-icon name="card-outline" class="radio-icon"></ion-icon
-            ><span>Credit card / Debit card</span></label
-          >
-        </div>
-
-        <div class="form-group center-vertical">
-          <input type="radio" name="payment" id="payment" value="credit" />
-          <label for="payment"
-            ><ion-icon name="cash-outline"></ion-icon
-            ><span>Cash / Delivery</span></label
-          >
-        </div>
-
-        <div class="form-group center-vertical">
-          <input type="radio" name="payment" id="payment" value="credit" />
-          <label for="payment" class="center-vertical"
-            ><ion-icon name="wallet-outline"></ion-icon
-            ><span>E-Wallets</span></label
-          >
-        </div>
-
-        <div class="form-btn-group">
-          <button class="btn btn-primary btn-prev">&LeftArrow; Previous</button>
-          <button class="btn btn-primary btn-next">Next &RightArrow;</button>
-        </div>
-      </div>
-    </div>
     <footer class="footer">
       <div class="container grid grid--footer">
         <ul class="media-col">
@@ -233,6 +245,7 @@
       </div>
     </footer>
 
+    <script src="js/effects/multistep.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
